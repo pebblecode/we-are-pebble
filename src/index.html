@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+  <script type="text/javascript" src="//use.typekit.net/asa8yjy.js"></script>
+  <title></title>
+
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+	<header class="site-header clear-fix">
+	  <a href="../" class="site-logo-container left">
+	    <img class="site-logo" src="../img/pebble-logo.svg">
+	  </a>
+	  <nav class="site-nav right">
+	    <button class="nav-btn">Menu</button>
+	    <ul class="clear-fix">
+	      {{#each siteHeader.sections }}
+	        <li>
+	          <a href="{{ url }}" class="nav-item" data-page="{{ page }}">
+	            <span>{{ page }}</span>
+	          </a>
+	        </li>
+	      {{/each}}
+	    </ul>
+	  </nav>
+	  <div class="site-menu"></div>
+	</header>
+
+	<section class="feature">
+		<h1 class="call-out">WE BUILD INNOVATIVE SOFTWARE WITH BIG BUSINESSES</h1>
+	</section>
+
+	<script src="/js/vendor/jquery-2.1.1.min.js"></script>
+	<script src="/js/main.js"></script>
+</body>
+</html>
