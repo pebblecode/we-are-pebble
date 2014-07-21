@@ -1,37 +1,39 @@
 //===============================================================================
 // HOMEPAGE
 //===============================================================================
-// .feature-wrap
-.feature-wrap{
-	height: 400px;
+// .hero-wrap
+.hero-wrap{
+	height: 450px;
 	overflow: hidden;
 
-	&:before{
+	&::before{
 		content: "";
 		position: absolute;
 		height: 100%;
 		width: 100%;
 		background-color: rgba(155, 92, 164, 0.5);
+		// background-color: rgba(107, 116, 130, 0.5);
+		background-color: rgba(58, 82, 115, 0.5);
 		z-index: 1;
 	}
-	&:after{
+	&::after{
 		content:"";
 		z-index: 2;
 		width: 100%;
 		position: absolute;
 		bottom: -40px;
 		display: block;
-		height: 50px;
+		height: 100px;
 		background: $paper;
 		// background: lighten($pc-purple, 43%);
 		transform: rotate(-2deg) scale(1.2);
 	}
-	& .feature-img{
+	& .hero-img{
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: bottom;
 		background-attachment: fixed;
-		background-image: url(../img/feature-2-blur.jpg);
+		background-image: url(../img/hero-2.jpg);
 		margin: 0;
 		height: 400px;
 		position: absolute;
@@ -58,30 +60,18 @@
 		z-index: 2;
 	}
 }
-// /.feature-wrap
+// /.hero-wrap
 
 // .intro-wrap
 .intro-wrap{
 	// background: lighten($pc-purple, 43%);
 	text-align: center;
-	padding: 70px 0 90px;
+	padding: 20px 0;
 	overflow: hidden;
 
-
-	&:after{
-		content:"";
-		width: 100%;
-		position: absolute;
-		bottom: 30px;
-		display: block;
-		height: 20px;
-		background: white;
-		border-bottom: 1px solid lighten($ink, 40%);
-		transform: rotate(3deg) scale(1.2);
-	}
 	& h1{
-		font-size: 56px;
-		color: $pc-purple;
+		font-size: 62px;
+		// color: $pc-purple;
 		font-weight: 900;
 	}
 }
@@ -89,79 +79,195 @@
 
 // .compare-wrap
 .compare-wrap{
-	padding: 50px 0;
+	padding: 90px 0;
 	background: lighten($ink, 45%);
+	background-image: linear-gradient(91deg, $pc-pink 49.5%, $pc-blue 49.5%);
+	overflow: hidden;
+
+	&:after{
+		content:"";
+		width: 100%;
+		position: absolute;
+		top: -50px;
+		display: block;
+		height: 100px;
+		background: white;
+		// background: lighten($ink, 45%);
+		transform: rotate(1.5deg) scale(1.2);
+	}
 
 	& .features{
+		margin-bottom: 0;
+		background-size: auto 40px;
+		padding-top: 120px;	
 
-		& .feature{
-			height: 100px;
-			width: 100px;
+		& .btn-wrap{
 			display: block;
 
+			& .btn{
+				margin: 40px auto 0;
+			}
+		}
+
+		& .feature{
+			width: 100%;
+			display: block;
+			padding: 20px 25px;
+			margin: 5px 0;
+
 			&::before, &::after {
-			    content: "";
-			    position: absolute;
-			    width: 100%;
-			    height: 100%;
-			    background-repeat: no-repeat;
-			    background-size: 100% 100%;
-			    background-position: 0 0;
-			  }
-			  &::after {
-			    background-position: 0 1px;
-			  }
+				content: "";
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				background-repeat: no-repeat;
+				background-size: 100% 100%;
+				background-position: 0 0;
+			}
+			&::before{
+				top: 0;
+				left: 0;
+			}
+			&::after {
+				background-position: 0 1px;
+				bottom: 0;
+				right: 0;
+			}
+			& h3{
+				font-size: 22px;
+				margin-bottom: 5px;
+			}
+			& p{
+				font-size: 16px;
+				line-height: 1.4;
+				margin-bottom: 0;
+			}
 		}
 
 		&.features-code{
-			background: url(../img/logo-code.png) top no-repeat;
-			background-image: url(../img/logo-code.svg), none;
+			background: url(../img/logo-code-wh.png) center 45px no-repeat;
+			background-image: url(../img/logo-code-wh.svg), none;
 			background-size: auto 40px;
-			padding-top: 100px;
-			height: 200px;
+			padding-right: 15px;
 			
 
 			& .feature{
+				// color: $pc-pink;
+				& h3{
+					color: $pc-pink;
+				}
 
 				&.feature-1{
-					background: $pc-pink;
-					padding: 0;
+					background: rgba(255,255,255,0.9);
 
 					&::before {
-					  background-image: url( '../img/side-1.svg' );
+					  background-image: url( '../img/side-code-1.svg' );
 					}
 					&::after {
-					  background-image: url( '../img/side-2.svg' );
+					  background-image: url( '../img/side-code-2.svg' );
+					}  
+				}
+
+				&.feature-2{
+					background: rgba(255,255,255,1);
+
+					&::before {
+					  background-image: url( '../img/side-code-3.svg' );
+					}
+					&::after {
+					  background-image: url( '../img/side-code-4.svg' );
+					}  
+				}
+
+				&.feature-3{
+					background: rgba(255,255,255,0.8);
+
+					&::before {
+					  background-image: url( '../img/side-code-5.svg' );
+					}
+					&::after {
+					  background-image: url( '../img/side-code-6.svg' );
 					}  
 				}
 			}
 		}
 
 		&.features-it{
-			background: url(../img/logo-it.png) top no-repeat;
-			background-image: url(../img/logo-it.svg), none;
+			background: url(../img/logo-it-wh.png) center 45px no-repeat;
+			background-image: url(../img/logo-it-wh.svg), none;	
 			background-size: auto 40px;
-			padding-top: 100px;
-			height: 200px;
-			
+			padding-left: 15px;
 
 			& .feature{
 
+				& h3{
+					color: $pc-blue;
+				}
 				&.feature-1{
-					background: $pc-blue;
-					padding: 0;
+					background: rgba(255,255,255,1);
 
 					&::before {
-					  background-image: url( '../img/side-1.svg' );
+					  background-image: url( '../img/side-it-3.svg' );
 					}
 					&::after {
-					  background-image: url( '../img/side-2.svg' );
+					  background-image: url( '../img/side-it-4.svg' );
+					}  
+				}
+				&.feature-2{
+					background: rgba(255,255,255,0.8);
+
+					&::before {
+					  background-image: url( '../img/side-it-1.svg' );
+					}
+					&::after {
+					  background-image: url( '../img/side-it-2.svg' );
+					}  
+				}
+				&.feature-3{
+					background: rgba(255,255,255,0.9);
+
+					&::before {
+					  background-image: url( '../img/side-it-5.svg' );
+					}
+					&::after {
+					  background-image: url( '../img/side-it-6.svg' );
 					}  
 				}
 			}
 		}
-		
 	}
-
 }
 // /.compare-wrap
+
+// .logo-wrap
+.logo-wrap{
+	background: $pc-grey;
+	color: white;
+	padding: 30px 0;
+
+	&::before{
+		content:"";
+		z-index: 2;
+		width: 100%;
+		position: absolute;
+		top: -10px;
+		display: block;
+		height: 100px;
+		background: $pc-grey;
+		// background: lighten($pc-purple, 43%);
+		transform: rotate(-1deg) scale(1.2);
+	}
+	&::after{
+		content:"";
+		z-index: 2;
+		width: 100%;
+		position: absolute;
+		bottom: -10px;
+		display: block;
+		height: 100px;
+		background: $pc-grey;
+		// background: lighten($pc-purple, 43%);
+		transform: rotate(1deg) scale(1.2);
+	}
+}
+// /.logo-wrap
