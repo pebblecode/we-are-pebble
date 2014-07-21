@@ -66,7 +66,9 @@ dt{
 dd{
   margin-left: 1.4em;
 }
-
+img{
+  max-width: 100%;
+}
 a{
   color: $pc-pink;
   font-weight: 700;
@@ -214,10 +216,29 @@ td{
   color: $ink;
   background: $paper;
 
+  &:hover{
+    background: rgba(255,255,255,0.8);
+  }
+
   &.btn-line{
     border: 2px solid $paper;
     color: $paper;
     background: none;
+    
+    &:hover{
+      background: white;
+      color: $ink;
+    }
   }
 
+}
+
+// Colours
+.pc-pink{
+  color: $pc-pink;
+  font-family: $callout-font;
+}
+.pc-blue{
+  color: $pc-blue;
+  font-family: $callout-font;
 }
