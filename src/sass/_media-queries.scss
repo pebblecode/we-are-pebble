@@ -75,6 +75,27 @@
     font-size: 16px;
   } 
 
+  // .hero-wrap
+  .hero-wrap{
+    height: 350px;
+    & h1{
+      text-align: center;
+      color: white;
+      margin-top: 70px;
+      font-weight: 300;
+      color: rgba(255,255,255,0.8);
+      z-index: 2;
+    }
+    & img{
+      margin: 10px auto;
+      display: table;
+      width: 200px;
+      height: auto;
+      z-index: 2;
+    }
+  }
+  // /.hero-wrap
+
   // .intro-wrap
   .intro-wrap{
     padding: 0px 0;
@@ -90,7 +111,7 @@
   // .compare-wrap
   .compare-wrap{
     background: $pc-pink;
-    padding-top: 80px;
+    padding: 80px 0 40px;
     
     & .container{
       padding: 0;
@@ -137,12 +158,15 @@
 
   // .logo-wrap
   .logo-wrap{
+    padding: 0;
 
     & li{
       width: 100%;
       & img{
-        height: auto;
-        width: 100%;
+        max-width: 80%;
+        margin: 10px auto;
+        display: table;
+        text-align: center;
       }
 
     }
