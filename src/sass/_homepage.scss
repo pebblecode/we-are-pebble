@@ -12,7 +12,7 @@
 		height: 100%;
 		width: 100%;
 		background-color: rgba(155, 92, 164, 0.5);
-		// background-color: rgba(107, 116, 130, 0.5);
+		background-color: rgba(107, 116, 130, 0.5);
 		background-color: rgba(58, 82, 115, 0.5);
 		z-index: 1;
 	}
@@ -66,24 +66,41 @@
 .intro-wrap{
 	// background: lighten($pc-purple, 43%);
 	text-align: center;
-	padding: 0px 0;
-	overflow: hidden;
-	height: 1000px;
+	padding: 0;
+	height: 2000px;
 
-	& h1{
-		font-size: 72px;
-		// color: $pc-purple;
-		font-weight: 900;
-		position: fixed;
+	& .pebble-logos{
+		position: relative;
+		top: -110px;
+		z-index: 2;
+
+		a{
+			display: inline-block;
+			margin: 0 5px;
+		}
+		& img{
+			height: 120px;
+			display: block;
+		}
+		& .code-logo{
+
+		}
+	}
+	& .intro-text{
 		z-index: 2;
 		width: 90%;
 		left: 5%;
-	}
+		position: fixed;
 
-	& h2{
-		width: 90%;
-		left: 5%;
+		& h1{
+			font-size: 72px;
+			font-weight: 900;
+		}
+		& h2{
+			font-size: 32px;
+		}
 	}
+	
 }
 // /.intro-wrap
 
