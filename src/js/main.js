@@ -1,6 +1,6 @@
 $(document).ready(function(){
     
-	// Parallax
+	// Parallax - Skrollr
 	var s = skrollr.init({
 		edgeStrategy: 'set',
 		easing: {

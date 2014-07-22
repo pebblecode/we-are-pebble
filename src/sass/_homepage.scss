@@ -62,42 +62,108 @@
 }
 // /.hero-wrap
 
+& .logos-block{
+	position: relative;
+	top: -110px;
+	z-index: 2;
+	@include margin-auto;
+	display: table;
+
+	a{
+		display: inline-block;
+		margin: 0 5px;
+		transition: transform .2s ease-in-out;
+
+		&:hover{
+			transform: scale(1.05);
+		}
+	}
+	& img{
+		height: 120px;
+		display: block;
+	}
+}
+
 // .intro-wrap
 .intro-wrap{
 	// background: lighten($pc-purple, 43%);
+	overflow: hidden;
 	text-align: center;
 	padding: 0;
-	height: 2000px;
+	height: 1280px;
 
-	& .pebble-logos{
-		position: relative;
-		top: -110px;
-		z-index: 2;
-
-		a{
-			display: inline-block;
-			margin: 0 5px;
-		}
-		& img{
-			height: 120px;
-			display: block;
-		}
-		& .code-logo{
-
-		}
-	}
-	& .intro-text{
+	& .about-block{
 		z-index: 2;
 		width: 90%;
 		left: 5%;
-		position: fixed;
+		position: relative;
+		top: 0;
 
 		& h1{
+			// chr
 			font-size: 72px;
 			font-weight: 900;
 		}
 		& h2{
 			font-size: 32px;
+		}
+	}
+
+	&  .team-block{
+		width: 100%;
+		z-index: 2;
+
+		& .bubble{
+			@include callout-font;
+			color: $paper;
+			display: inline-block;
+			text-align: center;
+			font-size: 18px;
+			margin: 50px 25px;
+			background-size: 100%;
+
+			// Edit these individually
+			// left: -50%;
+			// padding-top: 180px;
+			// width: 240px;
+			// height: 240px;
+			
+
+			&.bubble-consultants{
+				background: url(../img/bubble-consultants.png) no-repeat center;
+				background-image: url(../img/bubble-consultants.svg), none;
+				padding-top: 150px;
+				width: 200px;
+				height: 200px;
+				// left: -63%;
+			}
+			&.bubble-designers{
+				background: url(../img/bubble-designers.png) no-repeat center;
+				background-image: url(../img/bubble-designers.svg), none;
+				padding-top: 140px;
+				width: 180px;
+				height: 190px;
+				// left: -39%;
+				// top: -170px;
+			}
+			&.bubble-engineers{
+				background: url(../img/bubble-engineers.png) no-repeat center;
+				background-image: url(../img/bubble-engineers.svg), none;
+				padding-top: 145px;
+				width: 200px;
+				height: 210px;
+				// left: -60%;
+				// top: -240px;
+			}
+			&.bubble-testers{
+				background: url(../img/bubble-testers.png) no-repeat center;
+				background-image: url(../img/bubble-testers.svg), none;
+				padding-top: 145px;
+				width: 180px;
+				height: 180px;
+				// left: -38%;
+				// top: -400px;
+			}
 		}
 	}
 	
@@ -132,8 +198,7 @@
 		transform: rotate(-0.7deg) scale(1.2);
 	}
 
-
-	& .features{
+	& .features-block{
 		margin-bottom: 0;
 		background-size: auto 40px;
 		padding-top: 120px;	
@@ -193,7 +258,6 @@
 				& h3{
 					color: $pc-pink;
 				}
-
 				&.feature-1{
 					background: rgba(255,255,255,0.95);
 
@@ -204,7 +268,6 @@
 					  background-image: url( '../img/side-code-2.svg' );
 					}  
 				}
-
 				&.feature-2{
 					background: rgba(255,255,255,1);
 
@@ -215,7 +278,6 @@
 					  background-image: url( '../img/side-code-4.svg' );
 					}  
 				}
-
 				&.feature-3{
 					background: rgba(255,255,255,0.85);
 
