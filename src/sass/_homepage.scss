@@ -32,9 +32,9 @@
 		background-repeat: no-repeat;
 		background-position: bottom;
 		background-attachment: fixed;
-		background-image: url(../img/hero-2.jpg);
+		background-image: url(../img/london.jpg);
 		margin: 0;
-		height: 1000px;
+		height: 1500px;
 		position: absolute;
 		top: 0;
 		bottom: 0;
@@ -90,6 +90,7 @@
 	overflow: hidden;
 	text-align: center;
 	padding: 0;
+	margin-top: -30px;
 
 	& .about-block{
 		z-index: 2;
@@ -352,13 +353,34 @@
 	z-index: 1;
 
 	& li{
+		padding-bottom: 20px;
+		vertical-align: middle;
 
 		& img{
-			height: 100px;
+			height: 90px;
 			width: auto;
 			margin: 0 auto;
 			padding: 10px 0;
 			display: table;
+
+			&.logo-az{
+				padding-bottom: 20px;
+			}
+			&.logo-sony{
+				height: 80px;
+			}
+			&.logo-pearson{
+				height: 50px;
+			}
+			&.logo-lloyds{
+				height: 85px;
+			}
+			&.logo-bede{
+				height: 85px;
+			}
+			&.logo-forpeople{
+				height: 70px;
+			}
 		}
 	}
 }
