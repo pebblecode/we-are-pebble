@@ -152,64 +152,33 @@
 	<!-- .map-wrap -->
 	<section class="map-wrap">
 
-		<h2 class="call-out">Locations</h2>
-
-		<!-- <div id="map-carousel-nav" class="crsl-nav">
-			<a href="#" class="previous">Previous</a>
-			<a href="#" class="next">Next</a>
+		<div class="map-carousel">
+			<a class="buttons prev" href="#">Previous</a>
+			<nav class="map-carousel-nav">
+				<a class="location-london">London</a>
+				<a class="location-brighton">Brighton</a>
+				<a class="location-edinburgh">Edinburgh</a>
+				<a class="location-newcastle">Newcastle</a>
+				<a class="location-sofia">Sofia</a>
+			</nav>
+			<div class="viewport">
+				<ul class="overview">
+					<li>
+						<div id="london-map" class="map"></div>
+						<div class="address call-out tera">
+						  <a href="">
+						    <span>W214 Westminster Business Square</span>
+						    <span>1-45 Durham Street</span>
+						    <span>London</span>
+						    <span>SE11 5JH</span>
+						  </a>
+						</div>
+					</li>
+					<li>2</li>
+				</ul>
+			</div>
+			<a class="buttons next" href="#">Next</a>
 		</div>
-		<div data-navigation="map-carousel-nav" class="map-carousel crsl-items">
-			<ul class="crsl-wrap">
-				<li class="crsl-item">
-					<div class="map-item">
-						<span class="map"></span>
-						<h2 class="call-out">London</h2>
-						<ul class="map-details">
-							<li>W214 Westminster Business Square</li>
-							<li>1-45 Durham Street</li>
-							<li>London</li>
-							<li>SE11 5JH</li>
-						</ul>
-					</div>
-				</li>
-				<li class="crsl-item">
-					<div class="map-item">
-						<span class="map"></span>
-						<h2 class="call-out">London</h2>
-						<ul class="map-details">
-							<li>W214 Westminster Business Square</li>
-							<li>1-45 Durham Street</li>
-							<li>London</li>
-							<li>SE11 5JH</li>
-						</ul>
-					</div>
-				</li>
-				<li class="crsl-item">
-					<div class="map-item">
-						<span class="map"></span>
-						<h2 class="call-out">London</h2>
-						<ul class="map-details">
-							<li>W214 Westminster Business Square</li>
-							<li>1-45 Durham Street</li>
-							<li>London</li>
-							<li>SE11 5JH</li>
-						</ul>
-					</div>
-				</li>
-				<li class="crsl-item">
-					<div class="map-item">
-						<span class="map"></span>
-						<h2 class="call-out">London</h2>
-						<ul class="map-details">
-							<li>W214 Westminster Business Square</li>
-							<li>1-45 Durham Street</li>
-							<li>London</li>
-							<li>SE11 5JH</li>
-						</ul>
-					</div>
-				</li>
-			</ul>
-		</div>	 -->
 
 	</section>
 	<!-- /.map-wrap -->
@@ -227,6 +196,8 @@
 	<script src="../js/vendor/jquery-2.1.1.min.js"></script>
 	<script src="../js/skrollr.min.js"></script>
 	<script src="../js/carousel.min.js"></script>
+	<script type="text/javascript"src="http://maps.google.com/maps/api/js?v=3&amp;sensor=false"></script>
 	<script src="../js/main.js"></script>
+
 </body>
 </html>

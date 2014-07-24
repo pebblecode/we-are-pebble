@@ -1258,9 +1258,8 @@ h6, .h6 {
 /* line 390, /Users/pebblecode/Repos/we-are-pebble/src/sass/_homepage */
 .map-wrap {
   overflow: hidden;
-  background: #e7e9eb;
-  padding: 0 50px 50px; }
-  /* line 395, /Users/pebblecode/Repos/we-are-pebble/src/sass/_homepage */
+  background: #e7e9eb; }
+  /* line 394, /Users/pebblecode/Repos/we-are-pebble/src/sass/_homepage */
   .map-wrap::before {
     content: "";
     width: 100%;
@@ -1273,75 +1272,102 @@ h6, .h6 {
     -ms-transform: rotate(1.1deg) scale(1.2);
     transform: rotate(1.1deg) scale(1.2);
     z-index: 2; }
-  /* line 407, /Users/pebblecode/Repos/we-are-pebble/src/sass/_homepage */
+  /* line 406, /Users/pebblecode/Repos/we-are-pebble/src/sass/_homepage */
   .map-wrap .call-out {
     text-align: center;
     padding: 70px 0 0;
     font-size: 42px; }
-  /* line 413, /Users/pebblecode/Repos/we-are-pebble/src/sass/_homepage */
-  .map-wrap #map-carousel-nav {
-    z-index: 1;
-    top: 50%;
-    position: absolute;
-    left: 0;
-    right: 0; }
-    /* line 420, /Users/pebblecode/Repos/we-are-pebble/src/sass/_homepage */
-    .map-wrap #map-carousel-nav .next, .map-wrap #map-carousel-nav .previous {
-      width: 50px;
-      height: 50px;
+  /* line 412, /Users/pebblecode/Repos/we-are-pebble/src/sass/_homepage */
+  .map-wrap .map-carousel {
+    height: 1%;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+    padding: 0 0 10px;
+    height: 500px;
+    background: black; }
+    /* line 422, /Users/pebblecode/Repos/we-are-pebble/src/sass/_homepage */
+    .map-wrap .map-carousel .viewport {
+      height: 500px;
+      overflow: hidden;
+      position: relative; }
+    /* line 427, /Users/pebblecode/Repos/we-are-pebble/src/sass/_homepage */
+    .map-wrap .map-carousel .buttons {
+      background: #C01313;
+      border-radius: 35px;
       display: block;
       position: absolute;
-      -webkit-background-size: 100%;
-      background-size: 100%;
-      -webkit-transition: -webkit-transform 0.2s ease-in-out;
-      transition: transform 0.2s ease-in-out;
-      overflow: hidden; }
-      /* line 106, /Users/pebblecode/Repos/we-are-pebble/src/sass/_mixins.scss */
-      .map-wrap #map-carousel-nav .next:before, .map-wrap #map-carousel-nav .previous:before {
-        content: "";
-        display: block;
-        width: 0;
-        height: 100%; }
-      /* line 430, /Users/pebblecode/Repos/we-are-pebble/src/sass/_homepage */
-      .map-wrap #map-carousel-nav .next:hover, .map-wrap #map-carousel-nav .previous:hover {
-        -webkit-transform: scale(1.2);
-        -ms-transform: scale(1.2);
-        transform: scale(1.2); }
-    /* line 434, /Users/pebblecode/Repos/we-are-pebble/src/sass/_homepage */
-    .map-wrap #map-carousel-nav .next {
-      background: url(../img/arrow-right.png) center no-repeat;
-      background-image: url(../img/arrow-right.svg), none;
-      right: 20px; }
-    /* line 439, /Users/pebblecode/Repos/we-are-pebble/src/sass/_homepage */
-    .map-wrap #map-carousel-nav .previous {
-      background: url(../img/arrow-left.png) center no-repeat;
-      background-image: url(../img/arrow-left.svg), none;
-      left: 20px; }
-  /* line 446, /Users/pebblecode/Repos/we-are-pebble/src/sass/_homepage */
-  .map-wrap .map-carousel {
-    padding: 50px 0; }
-    /* line 449, /Users/pebblecode/Repos/we-are-pebble/src/sass/_homepage */
-    .map-wrap .map-carousel .crsl-item {
-      display: block; }
+      top: 50%;
+      left: 0;
+      width: 35px;
+      height: 35px;
+      color: #fff;
+      font-weight: bold;
+      text-align: center;
+      line-height: 35px;
+      text-decoration: none;
+      font-size: 22px; }
+    /* line 443, /Users/pebblecode/Repos/we-are-pebble/src/sass/_homepage */
+    .map-wrap .map-carousel .next {
+      right: 0;
+      left: auto;
+      top: 50%; }
+    /* line 448, /Users/pebblecode/Repos/we-are-pebble/src/sass/_homepage */
+    .map-wrap .map-carousel .buttons:hover {
+      color: #C01313;
+      background: #fff; }
     /* line 452, /Users/pebblecode/Repos/we-are-pebble/src/sass/_homepage */
-    .map-wrap .map-carousel .map-item {
-      background: white;
-      display: block; }
-      /* line 456, /Users/pebblecode/Repos/we-are-pebble/src/sass/_homepage */
-      .map-wrap .map-carousel .map-item .map {
-        display: block;
-        background: black;
+    .map-wrap .map-carousel .disable {
+      visibility: hidden; }
+    /* line 455, /Users/pebblecode/Repos/we-are-pebble/src/sass/_homepage */
+    .map-wrap .map-carousel .overview {
+      list-style: none;
+      position: absolute;
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      left: 0;
+      top: 0; }
+    /* line 464, /Users/pebblecode/Repos/we-are-pebble/src/sass/_homepage */
+    .map-wrap .map-carousel .overview li {
+      float: left;
+      margin: 0 20px 0 0;
+      padding: 1px;
+      height: 500px;
+      border: 1px solid #dcdcdc;
+      width: 100%; }
+  /* line 473, /Users/pebblecode/Repos/we-are-pebble/src/sass/_homepage */
+  .map-wrap .map-carousel-nav {
+    position: absolute;
+    right: 0;
+    top: 30px;
+    z-index: 2; }
+    /* line 479, /Users/pebblecode/Repos/we-are-pebble/src/sass/_homepage */
+    .map-wrap .map-carousel-nav a {
+      display: block;
+      text-align: right;
+      padding: 10px 20px 10px 50px;
+      margin: 5px;
+      font-size: 28px;
+      font-weight: 300; }
+      /* line 488, /Users/pebblecode/Repos/we-are-pebble/src/sass/_homepage */
+      .map-wrap .map-carousel-nav a:after {
+        content: "";
+        background: white;
+        -webkit-transform: skew(10deg) rotate(2deg);
+        -ms-transform: skew(10deg) rotate(2deg);
+        transform: skew(10deg) rotate(2deg);
+        position: absolute;
         width: 100%;
-        height: 200px; }
-      /* line 462, /Users/pebblecode/Repos/we-are-pebble/src/sass/_homepage */
-      .map-wrap .map-carousel .map-item .call-out {
-        font-size: 24px;
-        text-align: left;
-        margin: 0;
-        padding: 0 20px 5px; }
-      /* line 468, /Users/pebblecode/Repos/we-are-pebble/src/sass/_homepage */
-      .map-wrap .map-carousel .map-item .map-details {
-        padding: 0 20px 20px; }
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: -1; }
+  /* line 501, /Users/pebblecode/Repos/we-are-pebble/src/sass/_homepage */
+  .map-wrap .map {
+    width: 100%;
+    height: 100%;
+    position: absolute; }
 
 @media screen and (max-width: 1100px) {
   /* line 11, /Users/pebblecode/Repos/we-are-pebble/src/sass/_media-queries */

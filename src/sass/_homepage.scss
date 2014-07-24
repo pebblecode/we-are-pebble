@@ -390,7 +390,6 @@
 .map-wrap{
 	overflow: hidden;
 	background: lighten($ink, 45%);
-	padding: 0 50px 50px;
 
 	&::before{
 		content:"";
@@ -410,66 +409,99 @@
 		font-size: 42px;
 	}
 
-	& #map-carousel-nav{
-		z-index: 1;
-		top: 50%;
+	& .map-carousel { 
+		height: 1%; 
+		margin: 0; 
+		overflow:hidden; 
+		position: relative; 
+		padding: 0 0 10px;   
+		height: 500px;
+
+		background: black;
+
+		& .viewport { 
+			height: 500px; 
+			overflow: hidden; 
+			position: relative; 
+		}
+		& .buttons {
+		    background: #C01313;
+		    border-radius: 35px;
+		    display: block;
+		    position: absolute;
+		    top: 50%;
+		    left: 0;
+		    width: 35px;
+		    height: 35px;
+		    color: #fff;
+		    font-weight: bold;
+		    text-align: center;
+		    line-height: 35px;
+		    text-decoration: none;
+		    font-size: 22px;
+		}
+		& .next {
+		    right: 0;
+		    left: auto;
+		    top: 50%;
+		}
+		& .buttons:hover{
+		    color: #C01313;
+		    background: #fff;
+		}
+		& .disable { 
+			visibility: hidden; 
+		}
+		& .overview { 
+			list-style: none; 
+			position: absolute; 
+			padding: 0; 
+			margin: 0; 
+			width: 100%; 
+			left: 0; 
+			top: 0; 
+		}
+		& .overview li{ 
+			float: left; 
+			margin: 0 20px 0 0; 
+			padding: 1px; 
+			height: 500px; 
+			border: 1px solid #dcdcdc; 
+			width: 100%;
+		}
+	}
+	& .map-carousel-nav{
 		position: absolute;
-		left: 0;
 		right: 0;
+		top: 30px;
+		z-index: 2;
 
-		& .next, & .previous{
-			width: 50px;
-			height: 50px;
+		& a{
 			display: block;
-			position: absolute;
+			text-align: right;
+			padding: 10px 20px 10px 50px;
 			
-			background-size: 100%;
-			transition: transform .2s ease-in-out;
-			@include hide-text;
+			margin: 5px;
+			font-size: 28px;
+			font-weight: 300;
 
-			&:hover{
-				transform: scale(1.2);
-			}
-		}
-		& .next{
-			background: url(../img/arrow-right.png) center no-repeat;
-			background-image: url(../img/arrow-right.svg), none;
-			right: 20px;
-		}
-		& .previous{
-			background: url(../img/arrow-left.png) center no-repeat;
-			background-image: url(../img/arrow-left.svg), none;
-			left: 20px;
-		}
-	}
-
-	& .map-carousel{
-		padding: 50px 0;
-
-		& .crsl-item{
-			display: block;
-		}
-		& .map-item{
-			background: $paper;
-			display: block;
-
-			& .map{
-				display: block;
-				background: black;
+			&:after{
+				content:"";
+				background: $paper;
+				transform: skew(10deg) rotate(2deg);
+				position: absolute;
 				width: 100%;
-				height: 200px;
-			}
-			& .call-out{
-				font-size: 24px;
-				text-align: left;
-				margin: 0;
-				padding: 0 20px 5px;
-			}
-			& .map-details{
-				padding: 0 20px 20px;
+				height: 100%;
+				top: 0;
+				left: 0;
+				z-index: -1;
 			}
 		}
 	}
-	
+	& .map{
+		width: 100%;
+		height: 100%;
+		position: absolute;
+	}
 }
 // /.maps-wrap
