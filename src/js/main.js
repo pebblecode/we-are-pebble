@@ -1,3 +1,117 @@
+window.onload = function() {
+	var mapLondon = {
+	  center: new google.maps.LatLng(51.485672, -0.118554),
+	  zoom: 15,
+	  scrollwheel: false,
+	  disableDefaultUI: true
+	};
+	var map = new google.maps.Map(document.getElementById("london-map"),
+	  mapLondon);
+	var marker = new google.maps.Marker({
+	  position: new google.maps.LatLng(51.485672, -0.118554),
+	  map: map,
+	  title: "we are pebble"
+	});
+
+	var mapEdinburgh = {
+	  center: new google.maps.LatLng(55.8957488, -3.2953168),
+	  zoom: 15,
+	  scrollwheel: false,
+	  disableDefaultUI: true
+	};
+	var map = new google.maps.Map(document.getElementById("edinburgh-map"),
+	  mapEdinburgh);
+	var marker = new google.maps.Marker({
+	  position: new google.maps.LatLng(55.8957488, -3.2953168),
+	  map: map,
+	  title: "we are pebble"
+	});
+
+	// Google map: Brighton
+	var mapBrighton = {
+	  center: new google.maps.LatLng(50.834318, -0.1823678),
+	  zoom: 15,
+	  scrollwheel: false,
+	  disableDefaultUI: true
+	};
+	var map = new google.maps.Map(document.getElementById("brighton-map"),
+	  mapBrighton);
+	var marker = new google.maps.Marker({
+	  position: new google.maps.LatLng(50.834318, -0.1823678),
+	  map: map,
+	  title: "we are pebble"
+	});
+
+	// Google map: Newcastle
+	var mapNewcastle = {
+	  center: new google.maps.LatLng(55.0016746, -1.6156206),
+	  zoom: 15,
+	  scrollwheel: false,
+	  disableDefaultUI: true
+	};
+	var map = new google.maps.Map(document.getElementById("newcastle-map"),
+	  mapNewcastle);
+	var marker = new google.maps.Marker({
+	  position: new google.maps.LatLng(55.0016746, -1.6156206),
+	  map: map,
+	  title: "we are pebble"
+	});
+
+	// Google map: Sofia
+	var mapSofia = {
+	  center: new google.maps.LatLng(42.6742392, 23.3543577),
+	  zoom: 15,
+	  scrollwheel: false,
+	  disableDefaultUI: true
+	};
+	var map = new google.maps.Map(document.getElementById("sofia-map"),
+	  mapSofia);
+	var marker = new google.maps.Marker({
+	  position: new google.maps.LatLng(42.6742392, 23.3543577),
+	  map: map,
+	  title: "we are pebble"
+	});
+
+// 	function initialize()
+// {
+//     var latlng = new google.maps.LatLng(28.561287,-81.444465);
+//     var latlng2 = new google.maps.LatLng(28.507561,-81.482359);
+
+//     var myOptions =
+//     {
+//         zoom: 15,
+//         center: latlng,
+//         scrollwheel: false,
+// 		disableDefaultUI: true
+//     };
+//     var myOptions2 =
+//     {
+//         zoom: 15,
+//         center: latlng2,
+//         scrollwheel: false,
+// 		disableDefaultUI: true
+//     };
+
+//     var map = new google.maps.Map(document.getElementById("london-map"), myOptions);
+//     var map2 = new google.maps.Map(document.getElementById("edinburgh-map"), myOptions2);
+
+
+//     var myMarker = new google.maps.Marker(
+//     {
+// 		position: new google.maps.LatLng(51.485672, -0.118554),
+// 		map: map,
+// 		title: "we are pebble"
+//     });
+//     var myMarker2 = new google.maps.Marker(
+//     {
+//         position: new google.maps.LatLng(51.485672, -0.118554),
+// 		map: map,
+// 		title: "we are pebble"
+//     });
+
+// 	}
+};
+
 $(document).ready(function(){
     
 	// Parallax - Skrollr (destroy on mobile)
@@ -16,26 +130,38 @@ $(document).ready(function(){
 	// Map Carousel
 	$(".map-carousel").tinycarousel({
         axis   : "y",
+        start: 0,
         animationTime: 500
     });
+	var mapCarousel = $(".map-carousel").data("plugin_tinycarousel");
+	$('.map-carousel-nav a').click(function(){
+		$('.map-carousel-nav a').removeClass('active');
+		$(this).addClass('active');
+	});
+    $('.map-carousel .london').click(function(){
+        mapCarousel.move(0);
+        return false;
+    });
+    $('.map-carousel .edinburgh').click(function(){
+        mapCarousel.move(1);
+        return false;
+    });
+    $('.map-carousel .brighton').click(function(){
+        mapCarousel.move(2);
+        return false;
+    });
+    $('.map-carousel .newcastle').click(function(){
+        mapCarousel.move(3);
+        return false;
+    });
+    $('.map-carousel .sofia').click(function(){
+        mapCarousel.move(4);
+        return false;
+    });
+
 	
 });
 
-window.onload = function() {
-    var mapOptions = {
-      center: new google.maps.LatLng(51.485672, -0.118554),
-      zoom: 15,
-      scrollwheel: false,
-      disableDefaultUI: true
-    };
-    var map = new google.maps.Map(document.getElementById("london-map"),
-      mapOptions);
 
-    var marker = new google.maps.Marker({
-      position: new google.maps.LatLng(51.485672, -0.118554),
-      map: map,
-      title: "Hello World!"
-    });
 
-    $( '.site-footer' ).hide();
-  }
+

@@ -12,6 +12,11 @@
     text-decoration: none;
     font-weight: 300;
     cursor: pointer;
+    color: $ink;
+
+    &:hover{
+      color: $ink-link;
+    }
   }
 
   ul {

@@ -70,23 +70,23 @@ img{
   max-width: 100%;
 }
 a{
-  color: $pc-pink;
+  color: $pc-aqua;
   font-weight: 700;
 
   &:hover,
   &.hover{
-    color: darken($pc-pink, 15);
+    color: darken($pc-aqua, 15);
   }
 
   &:active,
   &.active{
-    color: darken($pc-pink, 30);
+    color: darken($pc-aqua, 30);
   }
 
   // commented out for development
   // &:visited,
   &.visited{
-    color: lighten($pc-pink, 15);
+    color: lighten($pc-aqua, 15);
   }
 }
 
@@ -98,7 +98,7 @@ p {
 blockquote{
   margin: 0;
   padding: 0 20px;
-  border-left: 2px solid $pc-pink;
+  border-left: 2px solid $pc-aqua;
   font-style: italic;
 
   p:before{
@@ -146,7 +146,7 @@ input[type="submit"]{
   padding: 10px 14px;
   text-transform: uppercase;
   border: 0;
-  background-color: $pc-pink;
+  background-color: $pc-aqua;
   color: $paper;
   text-decoration: none;
   font-weight: 700;
@@ -154,12 +154,12 @@ input[type="submit"]{
 
   &:hover,
   &.hover{
-    background-color: darken($pc-pink, 15);
+    background-color: darken($pc-aqua, 15);
   }
 
   &:active,
   &.active{
-    background-color: darken($pc-pink, 30);
+    background-color: darken($pc-aqua, 30);
   }
 
   &.disabled{
@@ -170,7 +170,7 @@ input[type="submit"]{
 
 table{
   width: 100%;
-  border: 1px solid $pc-pink;
+  border: 1px solid $pc-aqua;
 }
 
 thead{
@@ -179,11 +179,11 @@ thead{
 
 tr{
   border-bottom: 1px solid darken($paper, 10);
-  border-left: 1px solid $pc-pink;
-  border-right: 1px solid $pc-pink;
+  border-left: 1px solid $pc-aqua;
+  border-right: 1px solid $pc-aqua;
 
   &:nth-child(odd){
-    background-color: lighten($pc-pink, 35);
+    background-color: lighten($pc-aqua, 35);
   }
 
   &:last-child{
@@ -193,7 +193,7 @@ tr{
 
 th{
   padding: 2px 8px;
-  background-color: $pc-pink;
+  background-color: $pc-aqua;
   color: $paper;
 }
 
