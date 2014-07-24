@@ -71,45 +71,6 @@ window.onload = function() {
 	  map: map,
 	  title: "we are pebble"
 	});
-
-// 	function initialize()
-// {
-//     var latlng = new google.maps.LatLng(28.561287,-81.444465);
-//     var latlng2 = new google.maps.LatLng(28.507561,-81.482359);
-
-//     var myOptions =
-//     {
-//         zoom: 15,
-//         center: latlng,
-//         scrollwheel: false,
-// 		disableDefaultUI: true
-//     };
-//     var myOptions2 =
-//     {
-//         zoom: 15,
-//         center: latlng2,
-//         scrollwheel: false,
-// 		disableDefaultUI: true
-//     };
-
-//     var map = new google.maps.Map(document.getElementById("london-map"), myOptions);
-//     var map2 = new google.maps.Map(document.getElementById("edinburgh-map"), myOptions2);
-
-
-//     var myMarker = new google.maps.Marker(
-//     {
-// 		position: new google.maps.LatLng(51.485672, -0.118554),
-// 		map: map,
-// 		title: "we are pebble"
-//     });
-//     var myMarker2 = new google.maps.Marker(
-//     {
-//         position: new google.maps.LatLng(51.485672, -0.118554),
-// 		map: map,
-// 		title: "we are pebble"
-//     });
-
-// 	}
 };
 
 $(document).ready(function(){
@@ -159,9 +120,4 @@ $(document).ready(function(){
         return false;
     });
 
-	
 });
-
-
-
-

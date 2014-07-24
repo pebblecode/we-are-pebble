@@ -105,63 +105,77 @@
 		}
 		& h2{
 			font-size: 32px;
+			margin-bottom: 80px;
 		}
 	}
 
 	&  .team-block{
 		width: 100%;
 		z-index: 2;
-
-		& .bubble{
-			@include callout-font;
-			color: $paper;
-			display: inline-block;
-			text-align: center;
-			font-size: 18px;
-			margin: 50px 10px;
-			background-size: 100%;
-			
-
-			&.bubble-consultants{
-				background: url(../img/bubble-consultants.png) no-repeat center;
-				background-image: url(../img/bubble-consultants.svg), none;
-				padding-top: 175px;
-				width: 230px;
-				height: 230px;
-				-webkit-animation: pulse-small 3s infinite;
-				-moz-animation: pulse-small 3s infinite;
-				-animation: pulse-small 3s infinite;
-			}
-			&.bubble-designers{
-				background: url(../img/bubble-designers.png) no-repeat center;
-				background-image: url(../img/bubble-designers.svg), none;
-				padding-top: 175px;
-				width: 220px;
-				height: 230px;
-				-webkit-animation: pulse-small 5s infinite;
-				-moz-animation: pulse-small 5s infinite;
-				-animation: pulse-small 5s infinite;
-			}
-			&.bubble-engineers{
-				background: url(../img/bubble-engineers.png) no-repeat center;
-				background-image: url(../img/bubble-engineers.svg), none;
-				padding-top: 170px;
-				width: 220px;
-				height: 230px;
-				-webkit-animation: pulse-small 4s infinite;
-				-moz-animation: pulse-small 4s infinite;
-				-animation: pulse-small 4s infinite;
-			}
-			&.bubble-testers{
-				background: url(../img/bubble-testers.png) no-repeat center;
-				background-image: url(../img/bubble-testers.svg), none;
-				padding-top: 170px;
-				width: 220px;
-				height: 220px;
-				-webkit-animation: pulse-small 5s infinite;
-				-moz-animation: pulse-small 5s infinite;
-				-animation: pulse-small 5s infinite;
-			}
+	}
+	& .bubble{
+		@include callout-font;
+		color: $paper;
+		display: inline-block;
+		text-align: center;
+		font-size: 18px;
+		margin: 0 10px;
+		background-size: 100%;
+		
+		&.bubble-consultants{
+			background: url(../img/bubble-consultants.png) no-repeat center;
+			background-image: url(../img/bubble-consultants.svg), none;
+			padding-top: 175px;
+			width: 230px;
+			height: 230px;
+			-webkit-animation: pulse-small 3s infinite;
+			-moz-animation: pulse-small 3s infinite;
+			-animation: pulse-small 3s infinite;
+		}
+		&.bubble-designers{
+			background: url(../img/bubble-designers.png) no-repeat center;
+			background-image: url(../img/bubble-designers.svg), none;
+			padding-top: 175px;
+			width: 220px;
+			height: 230px;
+			top: -20px;
+			-webkit-animation: pulse-small 5s infinite;
+			-moz-animation: pulse-small 5s infinite;
+			-animation: pulse-small 5s infinite;
+		}
+		&.bubble-engineers{
+			background: url(../img/bubble-engineers.png) no-repeat center;
+			background-image: url(../img/bubble-engineers.svg), none;
+			padding-top: 170px;
+			width: 220px;
+			height: 230px;
+			top: -50px;
+			left: 25px;
+			-webkit-animation: pulse-small 4s infinite;
+			-moz-animation: pulse-small 4s infinite;
+			-animation: pulse-small 4s infinite;
+		}
+		&.bubble-developers{
+			background: url(../img/bubble-developers.png) no-repeat center;
+			background-image: url(../img/bubble-developers.svg), none;
+			padding-top: 168px;
+			width: 220px;
+			height: 230px;
+			-webkit-animation: pulse-small 4s infinite;
+			-moz-animation: pulse-small 4s infinite;
+			-animation: pulse-small 4s infinite;
+		}
+		&.bubble-testers{
+			background: url(../img/bubble-testers.png) no-repeat center;
+			background-image: url(../img/bubble-testers.svg), none;
+			padding-top: 170px;
+			width: 220px;
+			height: 220px;
+			top: -20px;
+			left: 20px;
+			-webkit-animation: pulse-small 5s infinite;
+			-moz-animation: pulse-small 5s infinite;
+			-animation: pulse-small 5s infinite;
 		}
 	}
 }
@@ -169,7 +183,7 @@
 
 // .compare-wrap
 .compare-wrap{
-	padding: 90px 0 120px;
+	padding: 55px 0 120px;
 	background-image: linear-gradient(91deg, $pc-pink 49.5%, $pc-blue 49.5%);
 	overflow: hidden;
 
@@ -177,7 +191,7 @@
 		content:"";
 		width: 100%;
 		position: absolute;
-		top: -50px;
+		top: -90px;
 		display: block;
 		height: 100px;
 		background: white;
@@ -357,7 +371,7 @@
 		vertical-align: middle;
 
 		& img{
-			height: 90px;
+			height: 85px;
 			width: auto;
 			margin: 0 auto;
 			padding: 10px 0;
@@ -380,6 +394,18 @@
 			}
 			&.logo-forpeople{
 				height: 70px;
+			}
+			&.logo-fraser{
+				height: 110px;
+			}
+			&.logo-blackbridge{
+				height: 60px;
+			}
+			&.logo-market{
+				height:80px;
+			}
+			&.logo-vccp{
+				height:90px;
 			}
 		}
 	}
