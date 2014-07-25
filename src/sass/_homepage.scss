@@ -52,9 +52,9 @@
 		z-index: 2;
 	}
 	& img{
-		margin: 10px auto;
+		margin: 180px auto 10px;
 		display: table;
-		width: 300px;
+		width: 500px;
 		height: auto;
 		z-index: 2;
 	}
@@ -483,7 +483,7 @@
 			background: white;
 			padding: 5px 15px 5px 30px;
 			float: right;
-			background: rgba(255,255,255,0.5);
+			background: rgba(255,255,255,0.6);
 			color: rgba(107, 116, 130, 0.7);
 			transition: transform .2s ease-in-out;
 
@@ -509,12 +509,12 @@
 			width: 100%;
 			height: 100%;
 			display: block;
-			background: rgba(237, 240, 246, 0.6);
+			background: rgba(237, 240, 246, 0.4);
 		}
 	}
 	& .address{
 		position: absolute;
-		margin: 80px 0 0;
+		margin: 70px 0 0;
 		left: 22px;
 		right: 35%;
 		text-decoration: none;
@@ -530,6 +530,7 @@
 		& span{
 			font-family: $callout-font;
 			display: block;
+			font-size: 64px;
 		}
 	}
 }

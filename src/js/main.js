@@ -1,3 +1,53 @@
+$(document).ready(function(){
+    
+	// Parallax - Skrollr (destroy on mobile)
+	if(!(/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)){
+		var s = skrollr.init({
+			edgeStrategy: 'set',
+			easing: {
+				WTF: Math.random,
+				inverted: function(p) {
+					return 1-p;
+				}
+			}
+		});
+	}
+
+	// Map Carousel
+	$(".map-carousel").tinycarousel({
+        axis   : "y",
+        start: 0,
+        animationTime: 500
+    });
+	var mapCarousel = $(".map-carousel").data("plugin_tinycarousel");
+	$('.map-carousel-nav a').click(function(){
+		$('.map-carousel-nav a').removeClass('active');
+		$(this).addClass('active');
+	});
+    $('.map-carousel .london').click(function(){
+        mapCarousel.move(0);
+        return false;
+    });
+    $('.map-carousel .edinburgh').click(function(){
+        mapCarousel.move(1);
+        return false;
+    });
+    $('.map-carousel .brighton').click(function(){
+        mapCarousel.move(2);
+        return false;
+    });
+    $('.map-carousel .newcastle').click(function(){
+        mapCarousel.move(3);
+        return false;
+    });
+    $('.map-carousel .sofia').click(function(){
+        mapCarousel.move(4);
+        return false;
+    });
+
+});
+
+// Google Maps
 window.onload = function() {
 	var mapLondon = {
 	  center: new google.maps.LatLng(51.485672, -0.118554),
@@ -14,7 +64,7 @@ window.onload = function() {
 	});
 
 	var mapEdinburgh = {
-	  center: new google.maps.LatLng(55.8957488, -3.2953168),
+	  center: new google.maps.LatLng(55.8959774, -3.296969),
 	  zoom: 15,
 	  scrollwheel: false,
 	  disableDefaultUI: true
@@ -22,7 +72,7 @@ window.onload = function() {
 	var map = new google.maps.Map(document.getElementById("edinburgh-map"),
 	  mapEdinburgh);
 	var marker = new google.maps.Marker({
-	  position: new google.maps.LatLng(55.8957488, -3.2953168),
+	  position: new google.maps.LatLng(55.8959774, -3.296969),
 	  map: map,
 	  title: "we are pebble"
 	});
@@ -72,52 +122,3 @@ window.onload = function() {
 	  title: "we are pebble"
 	});
 };
-
-$(document).ready(function(){
-    
-	// Parallax - Skrollr (destroy on mobile)
-	if(!(/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)){
-		var s = skrollr.init({
-			edgeStrategy: 'set',
-			easing: {
-				WTF: Math.random,
-				inverted: function(p) {
-					return 1-p;
-				}
-			}
-		});
-	}
-
-	// Map Carousel
-	$(".map-carousel").tinycarousel({
-        axis   : "y",
-        start: 0,
-        animationTime: 500
-    });
-	var mapCarousel = $(".map-carousel").data("plugin_tinycarousel");
-	$('.map-carousel-nav a').click(function(){
-		$('.map-carousel-nav a').removeClass('active');
-		$(this).addClass('active');
-	});
-    $('.map-carousel .london').click(function(){
-        mapCarousel.move(0);
-        return false;
-    });
-    $('.map-carousel .edinburgh').click(function(){
-        mapCarousel.move(1);
-        return false;
-    });
-    $('.map-carousel .brighton').click(function(){
-        mapCarousel.move(2);
-        return false;
-    });
-    $('.map-carousel .newcastle').click(function(){
-        mapCarousel.move(3);
-        return false;
-    });
-    $('.map-carousel .sofia').click(function(){
-        mapCarousel.move(4);
-        return false;
-    });
-
-});

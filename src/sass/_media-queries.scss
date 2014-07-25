@@ -126,19 +126,10 @@
   .hero-wrap{
     height: 300px;
 
-    & h1{
-      text-align: center;
-      color: white;
-      margin-top: 40px;
-      margin-bottom: 0;
-      font-weight: 300;
-      color: rgba(255,255,255,0.8);
-      z-index: 2;
-    }
     & img{
-      margin: 0 auto;
+      margin: 70px auto 0;
       display: table;
-      width: 200px;
+      width: 75%;
       height: auto;
       z-index: 2;
     }
@@ -332,9 +323,13 @@
 
     & .address{
       font-size: 32px;
-      margin: 160px 0 0;
+      margin: 165px 0 0;
       right: 0;
       line-height: 1.2;
+
+      & span{
+        font-size: 32px;
+      }
     }
 
   }  
