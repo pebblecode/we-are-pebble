@@ -482,8 +482,8 @@
 				cursor: pointer;
 				transform: scale(1.1);
 				opacity: 1;
-				// color: $ink;
-				color: $pc-aqua;
+				color: $ink;
+				// color: $pc-aqua;
 				box-shadow: 0 0 15px rgba(107,116,130, 0.15);
 			}
 		}
@@ -512,10 +512,11 @@
 		z-index: 2;
 		text-align: left;
 		color: $ink;
-		color: $pc-aqua;
+		// color: $pc-aqua;
 
 		&:hover{
-			color: lighten($pc-aqua, 5%);
+			color: $ink-link;
+			// color: lighten($pc-aqua, 5%);
 		}
 		& span{
 			font-family: $callout-font;

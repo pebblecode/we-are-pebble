@@ -1364,7 +1364,7 @@ h6, .h6 {
         -ms-transform: scale(1.1);
         transform: scale(1.1);
         opacity: 1;
-        color: #42B9BD;
+        color: #6B7482;
         -webkit-box-shadow: 0 0 15px rgba(107, 116, 130, 0.15);
         box-shadow: 0 0 15px rgba(107, 116, 130, 0.15); }
   /* line 491, /Users/pebblecode/Repos/we-are-pebble/src/sass/_homepage */
@@ -1390,12 +1390,11 @@ h6, .h6 {
     text-shadow: 0 0 50px white;
     z-index: 2;
     text-align: left;
-    color: #6B7482;
-    color: #42B9BD; }
+    color: #6B7482; }
     /* line 517, /Users/pebblecode/Repos/we-are-pebble/src/sass/_homepage */
     .map-wrap .address:hover {
-      color: #55c2c4; }
-    /* line 520, /Users/pebblecode/Repos/we-are-pebble/src/sass/_homepage */
+      color: #828A96; }
+    /* line 521, /Users/pebblecode/Repos/we-are-pebble/src/sass/_homepage */
     .map-wrap .address span {
       font-family: "brandon-grotesque", "brandon grotesque", sans-serif;
       display: block;
@@ -1708,7 +1707,7 @@ h6, .h6 {
     max-width: none; }
   /* line 80, /Users/pebblecode/Repos/we-are-pebble/src/sass/_media-queries */
   .unit {
-    width: auto;
+    width: auto !important;
     margin-left: 0;
     display: block; }
   /* line 85, /Users/pebblecode/Repos/we-are-pebble/src/sass/_media-queries */
@@ -1919,4 +1918,78 @@ h6, .h6 {
     line-height: 1.2; }
     /* line 327, /Users/pebblecode/Repos/we-are-pebble/src/sass/_media-queries */
     .map-wrap .address span {
-      font-size: 32px; } }
+      font-size: 32px; }
+  /* line 338, /Users/pebblecode/Repos/we-are-pebble/src/sass/_media-queries */
+  .umbraco-page .umbraco-header {
+    padding: 20px 15px 0; }
+    /* line 341, /Users/pebblecode/Repos/we-are-pebble/src/sass/_media-queries */
+    .umbraco-page .umbraco-header .container {
+      padding-left: 0;
+      padding-right: 0; }
+    /* line 346, /Users/pebblecode/Repos/we-are-pebble/src/sass/_media-queries */
+    .umbraco-page .umbraco-header .site-logo {
+      margin: 0;
+      padding: 10px 0 0;
+      width: 49%;
+      vertical-align: middle; }
+      /* line 352, /Users/pebblecode/Repos/we-are-pebble/src/sass/_media-queries */
+      .umbraco-page .umbraco-header .site-logo img {
+        padding: 0; }
+    /* line 356, /Users/pebblecode/Repos/we-are-pebble/src/sass/_media-queries */
+    .umbraco-page .umbraco-header .umbraco-logo {
+      padding: 0;
+      margin: 0;
+      width: 49%;
+      vertical-align: middle; }
+      /* line 362, /Users/pebblecode/Repos/we-are-pebble/src/sass/_media-queries */
+      .umbraco-page .umbraco-header .umbraco-logo img {
+        padding: 0;
+        height: 40px;
+        width: auto !important;
+        float: right;
+        margin: 0 0 0 auto; }
+  /* line 372, /Users/pebblecode/Repos/we-are-pebble/src/sass/_media-queries */
+  .umbraco-page .intro-wrap {
+    padding: 120px 0 40px;
+    top: 0; }
+    /* line 376, /Users/pebblecode/Repos/we-are-pebble/src/sass/_media-queries */
+    .umbraco-page .intro-wrap p {
+      text-align: center;
+      font-size: 18px; }
+    /* line 380, /Users/pebblecode/Repos/we-are-pebble/src/sass/_media-queries */
+    .umbraco-page .intro-wrap h2 {
+      margin: 30px auto 0;
+      line-height: 0.9; }
+  /* line 386, /Users/pebblecode/Repos/we-are-pebble/src/sass/_media-queries */
+  .umbraco-page .try-wrap {
+    padding-top: 100px; }
+    /* line 389, /Users/pebblecode/Repos/we-are-pebble/src/sass/_media-queries */
+    .umbraco-page .try-wrap h3.spaceship {
+      padding: 0px 0 0;
+      text-align: center; }
+  /* line 395, /Users/pebblecode/Repos/we-are-pebble/src/sass/_media-queries */
+  .umbraco-page .skills-wrap {
+    padding: 120px 0 10px; }
+    /* line 398, /Users/pebblecode/Repos/we-are-pebble/src/sass/_media-queries */
+    .umbraco-page .skills-wrap::before {
+      top: 60px; }
+    /* line 401, /Users/pebblecode/Repos/we-are-pebble/src/sass/_media-queries */
+    .umbraco-page .skills-wrap ul {
+      margin-top: 60px;
+      padding-top: 110px; }
+      /* line 405, /Users/pebblecode/Repos/we-are-pebble/src/sass/_media-queries */
+      .umbraco-page .skills-wrap ul li {
+        font-size: 18px;
+        margin-bottom: 10px; }
+  /* line 412, /Users/pebblecode/Repos/we-are-pebble/src/sass/_media-queries */
+  .umbraco-page .trio-wrap {
+    padding: 80px 0 45px; }
+    /* line 415, /Users/pebblecode/Repos/we-are-pebble/src/sass/_media-queries */
+    .umbraco-page .trio-wrap .one-of-three {
+      margin-bottom: 20px; }
+    /* line 418, /Users/pebblecode/Repos/we-are-pebble/src/sass/_media-queries */
+    .umbraco-page .trio-wrap li p {
+      font-size: 18px; }
+  /* line 425, /Users/pebblecode/Repos/we-are-pebble/src/sass/_media-queries */
+  .umbraco-page .site-footer .container {
+    padding: 0; } }
