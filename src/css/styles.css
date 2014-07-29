@@ -1431,7 +1431,7 @@ h6, .h6 {
     /* line 43, /Users/mark/repos/we-are-pebble/src/sass/_umbraco */
     .umbraco-page .umbraco-header .site-logo img {
       padding: 0 12px 0;
-      width: 250px; }
+      width: 150px; }
     /* line 47, /Users/mark/repos/we-are-pebble/src/sass/_umbraco */
     .umbraco-page .umbraco-header .site-logo:hover {
       -webkit-transform: scale(1.1);
