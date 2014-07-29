@@ -1,6 +1,6 @@
-# Website Template
+# we are pebble
 
-Barebones gulp.js project. 
+wearepebble.com and Umbraco pages.
 
 ### Includes
 * Local server
