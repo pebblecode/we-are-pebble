@@ -1,5 +1,5 @@
 //===============================================================================
-// FOOTER 
+// FOOTER
 //===============================================================================
 .site-footer {
   background: $paper;
@@ -33,9 +33,9 @@
   left: 0;
   z-index: 4;
   font-size: 38px;
-  @include vendor( transition, -prefix- transform .3s );
+  transition: transform .3s;
 
   &.active {
-    @include vendor( transform, translateY( -100% ) );
+    transform: translateY( -100% );
   }
 }

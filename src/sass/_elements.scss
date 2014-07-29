@@ -5,7 +5,7 @@
 *::before,
 *:after{
   // use border-box box model everywhere
-  @include box-sizing(border-box);
+  box-sizing: border-box;
 
   // set thiner font rendering for webkit browsers
   -webkit-font-smoothing: antialiased;
@@ -23,7 +23,7 @@ html {
 }
 body{
   background-color: $paper;
-  color: $ink; 
+  color: $ink;
   font-size: 18px;
   font-family: $body-font;
   font-weight: 300;
@@ -112,8 +112,7 @@ blockquote{
 }
 
 pre{
-  @include border-radius(.2em);
-
+  border-radius: .2em;
   padding: .85em 1.05em;
   background-color: darken($ink, 20);
   color: $paper;
@@ -123,8 +122,7 @@ pre{
 
 p code,
 p samp{
-  @include border-radius(.2em);
-
+  border-radius: .2em;
   padding: 0 .4em;
   border: 1px solid darken($paper, 12.5);
   background-color: darken($paper, 4);
@@ -137,11 +135,10 @@ hr{
 }
 
 button,
-input[type="button"], 
-input[type="reset"], 
+input[type="button"],
+input[type="reset"],
 input[type="submit"]{
-  @include border-radius(2px);
-  
+  border-radius: 2px;
   display: inline-block;
   padding: 10px 14px;
   text-transform: uppercase;
@@ -224,7 +221,7 @@ td{
     border: 2px solid $paper;
     color: $paper;
     background: none;
-    
+
     &:hover{
       background: white;
       color: $ink;
