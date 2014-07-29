@@ -1475,15 +1475,16 @@ h6, .h6 {
   .umbraco-page .intro-wrap p {
     text-align: right;
     font-size: 28px;
-    z-index: 2; }
-  /* line 81, /Users/mark/repos/we-are-pebble/src/sass/_umbraco */
+    z-index: 2;
+    margin-top: 22px; }
+  /* line 82, /Users/mark/repos/we-are-pebble/src/sass/_umbraco */
   .umbraco-page .intro-wrap h2 {
     z-index: 2; }
-/* line 88, /Users/mark/repos/we-are-pebble/src/sass/_umbraco */
+/* line 89, /Users/mark/repos/we-are-pebble/src/sass/_umbraco */
 .umbraco-page .try-wrap {
   padding: 140px 0 0;
   overflow: hidden; }
-  /* line 92, /Users/mark/repos/we-are-pebble/src/sass/_umbraco */
+  /* line 93, /Users/mark/repos/we-are-pebble/src/sass/_umbraco */
   .umbraco-page .try-wrap::before {
     content: "";
     width: 100%;
@@ -1495,26 +1496,26 @@ h6, .h6 {
     -webkit-transform: rotate(-2deg) scale(1.2);
     -ms-transform: rotate(-2deg) scale(1.2);
     transform: rotate(-2deg) scale(1.2); }
-  /* line 102, /Users/mark/repos/we-are-pebble/src/sass/_umbraco */
+  /* line 103, /Users/mark/repos/we-are-pebble/src/sass/_umbraco */
   .umbraco-page .try-wrap .container, .umbraco-page .try-wrap .grid, .umbraco-page .try-wrap .unit {
     overflow: visible; }
-  /* line 105, /Users/mark/repos/we-are-pebble/src/sass/_umbraco */
+  /* line 106, /Users/mark/repos/we-are-pebble/src/sass/_umbraco */
   .umbraco-page .try-wrap h2.call-out {
     overflow: visible;
     vertical-align: bottom;
     margin-bottom: 0; }
-    /* line 110, /Users/mark/repos/we-are-pebble/src/sass/_umbraco */
+    /* line 111, /Users/mark/repos/we-are-pebble/src/sass/_umbraco */
     .umbraco-page .try-wrap h2.call-out span {
       line-height: 0.9; }
-  /* line 114, /Users/mark/repos/we-are-pebble/src/sass/_umbraco */
+  /* line 115, /Users/mark/repos/we-are-pebble/src/sass/_umbraco */
   .umbraco-page .try-wrap h3.spaceship {
     line-height: 1.1;
     vertical-align: bottom;
     margin-bottom: 5px; }
-    /* line 123, /Users/mark/repos/we-are-pebble/src/sass/_umbraco */
+    /* line 124, /Users/mark/repos/we-are-pebble/src/sass/_umbraco */
     .umbraco-page .try-wrap h3.spaceship img {
       margin-bottom: 20px; }
-  /* line 127, /Users/mark/repos/we-are-pebble/src/sass/_umbraco */
+  /* line 128, /Users/mark/repos/we-are-pebble/src/sass/_umbraco */
   .umbraco-page .try-wrap .provide-block {
     text-align: center;
     position: relative;
@@ -1529,7 +1530,7 @@ h6, .h6 {
     transform: rotate(1deg);
     -webkit-animation: pulse-small 5s infinite;
     animation: pulse-small 5s infinite; }
-    /* line 139, /Users/mark/repos/we-are-pebble/src/sass/_umbraco */
+    /* line 140, /Users/mark/repos/we-are-pebble/src/sass/_umbraco */
     .umbraco-page .try-wrap .provide-block:after {
       content: "";
       position: absolute;
@@ -1542,12 +1543,12 @@ h6, .h6 {
       -ms-transform: rotate(0deg) skew(10deg);
       transform: rotate(0deg) skew(10deg);
       z-index: -1; }
-/* line 155, /Users/mark/repos/we-are-pebble/src/sass/_umbraco */
+/* line 156, /Users/mark/repos/we-are-pebble/src/sass/_umbraco */
 .umbraco-page .skills-wrap {
   padding: 190px 0 40px;
   overflow: hidden;
   text-align: center; }
-  /* line 160, /Users/mark/repos/we-are-pebble/src/sass/_umbraco */
+  /* line 161, /Users/mark/repos/we-are-pebble/src/sass/_umbraco */
   .umbraco-page .skills-wrap::before {
     content: "";
     width: 100%;
@@ -1559,43 +1560,43 @@ h6, .h6 {
     -webkit-transform: rotate(1.2deg) scale(1.2);
     -ms-transform: rotate(1.2deg) scale(1.2);
     transform: rotate(1.2deg) scale(1.2); }
-  /* line 171, /Users/mark/repos/we-are-pebble/src/sass/_umbraco */
+  /* line 172, /Users/mark/repos/we-are-pebble/src/sass/_umbraco */
   .umbraco-page .skills-wrap h3 {
     -webkit-animation: pulse-small 5s infinite;
     animation: pulse-small 5s infinite; }
-  /* line 175, /Users/mark/repos/we-are-pebble/src/sass/_umbraco */
+  /* line 176, /Users/mark/repos/we-are-pebble/src/sass/_umbraco */
   .umbraco-page .skills-wrap ul {
     margin-top: 80px;
     padding-top: 120px; }
-    /* line 179, /Users/mark/repos/we-are-pebble/src/sass/_umbraco */
+    /* line 180, /Users/mark/repos/we-are-pebble/src/sass/_umbraco */
     .umbraco-page .skills-wrap ul li {
       margin-bottom: 15px; }
-    /* line 182, /Users/mark/repos/we-are-pebble/src/sass/_umbraco */
+    /* line 183, /Users/mark/repos/we-are-pebble/src/sass/_umbraco */
     .umbraco-page .skills-wrap ul.build {
       background: url(../img/umbraco-build.png) top no-repeat;
       background-image: url(../img/umbraco-build.svg), none;
       -webkit-background-size: auto 85px;
       background-size: auto 85px; }
-    /* line 187, /Users/mark/repos/we-are-pebble/src/sass/_umbraco */
+    /* line 188, /Users/mark/repos/we-are-pebble/src/sass/_umbraco */
     .umbraco-page .skills-wrap ul.consultancy {
       background: url(../img/umbraco-consultancy.png) top no-repeat;
       background-image: url(../img/umbraco-consultancy.svg), none;
       -webkit-background-size: auto 85px;
       background-size: auto 85px; }
-    /* line 192, /Users/mark/repos/we-are-pebble/src/sass/_umbraco */
+    /* line 193, /Users/mark/repos/we-are-pebble/src/sass/_umbraco */
     .umbraco-page .skills-wrap ul.versioning {
       background: url(../img/umbraco-versioning.png) top no-repeat;
       background-image: url(../img/umbraco-versioning.svg), none;
       -webkit-background-size: auto 85px;
       background-size: auto 85px; }
-/* line 202, /Users/mark/repos/we-are-pebble/src/sass/_umbraco */
+/* line 203, /Users/mark/repos/we-are-pebble/src/sass/_umbraco */
 .umbraco-page .trio-wrap {
   background: #57abdb;
   padding: 130px 0 65px;
   overflow: hidden;
   color: white;
   text-align: center; }
-  /* line 209, /Users/mark/repos/we-are-pebble/src/sass/_umbraco */
+  /* line 210, /Users/mark/repos/we-are-pebble/src/sass/_umbraco */
   .umbraco-page .trio-wrap::before {
     content: "";
     width: 100%;
@@ -1607,12 +1608,12 @@ h6, .h6 {
     -webkit-transform: rotate(-1.5deg) scale(1.2);
     -ms-transform: rotate(-1.5deg) scale(1.2);
     transform: rotate(-1.5deg) scale(1.2); }
-  /* line 220, /Users/mark/repos/we-are-pebble/src/sass/_umbraco */
+  /* line 221, /Users/mark/repos/we-are-pebble/src/sass/_umbraco */
   .umbraco-page .trio-wrap .one-of-three {
     overflow: visible;
     padding: 50px 25px 20px;
     z-index: 1; }
-    /* line 225, /Users/mark/repos/we-are-pebble/src/sass/_umbraco */
+    /* line 226, /Users/mark/repos/we-are-pebble/src/sass/_umbraco */
     .umbraco-page .trio-wrap .one-of-three::before {
       content: "";
       position: absolute;
@@ -1626,31 +1627,31 @@ h6, .h6 {
       -webkit-transform: rotate(2deg) skew(3deg);
       -ms-transform: rotate(2deg) skew(3deg);
       transform: rotate(2deg) skew(3deg); }
-    /* line 238, /Users/mark/repos/we-are-pebble/src/sass/_umbraco */
+    /* line 239, /Users/mark/repos/we-are-pebble/src/sass/_umbraco */
     .umbraco-page .trio-wrap .one-of-three:nth-child(2)::before {
       -webkit-transform: rotate(-1deg) skew(-1deg);
       -ms-transform: rotate(-1deg) skew(-1deg);
       transform: rotate(-1deg) skew(-1deg); }
-    /* line 241, /Users/mark/repos/we-are-pebble/src/sass/_umbraco */
+    /* line 242, /Users/mark/repos/we-are-pebble/src/sass/_umbraco */
     .umbraco-page .trio-wrap .one-of-three:nth-child(3)::before {
       -webkit-transform: rotate(1deg) skew(1deg);
       -ms-transform: rotate(1deg) skew(1deg);
       transform: rotate(1deg) skew(1deg); }
-    /* line 245, /Users/mark/repos/we-are-pebble/src/sass/_umbraco */
+    /* line 246, /Users/mark/repos/we-are-pebble/src/sass/_umbraco */
     .umbraco-page .trio-wrap .one-of-three h4 {
       width: 100%;
       color: white;
       margin: 0 0 20px; }
-    /* line 250, /Users/mark/repos/we-are-pebble/src/sass/_umbraco */
+    /* line 251, /Users/mark/repos/we-are-pebble/src/sass/_umbraco */
     .umbraco-page .trio-wrap .one-of-three p {
       line-height: 1.3;
       margin-bottom: 20px; }
-    /* line 254, /Users/mark/repos/we-are-pebble/src/sass/_umbraco */
+    /* line 255, /Users/mark/repos/we-are-pebble/src/sass/_umbraco */
     .umbraco-page .trio-wrap .one-of-three img {
       max-width: 200px;
       display: table;
       margin: 25px auto 20px; }
-    /* line 260, /Users/mark/repos/we-are-pebble/src/sass/_umbraco */
+    /* line 261, /Users/mark/repos/we-are-pebble/src/sass/_umbraco */
     .umbraco-page .trio-wrap .one-of-three.challenge img {
       max-width: 170px;
       margin: 5px auto 25px; }
