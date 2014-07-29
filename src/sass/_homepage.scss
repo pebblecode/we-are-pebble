@@ -5,12 +5,14 @@
 .hero-wrap{
   height: 600px;
   overflow: hidden;
+  text-align: center;
 
   &::before{
     content: "";
     position: absolute;
     height: 100%;
     width: 100%;
+    left: 0;
     background-color: rgba(155, 92, 164, 0.5);
     background-color: rgba(107, 116, 130, 0.5);
     background-color: rgba(58, 82, 115, 0.5);
@@ -53,7 +55,6 @@
   }
   img{
     margin: 180px auto 10px;
-    display: table;
     width: 500px;
     height: auto;
     z-index: 2;
@@ -176,8 +177,10 @@
 // .compare-wrap
 .compare-wrap{
   padding: 55px 0 120px;
-  background-image: linear-gradient(91deg, $pc-pink 49.5%, $pc-blue 49.5%);
   overflow: hidden;
+  background-image: url("../img/compare-wrap-bg.svg");
+  background-size: 110%;
+  background-position: center;
 
   &::before{
     content:"";
@@ -254,7 +257,6 @@
       background-image: url(../img/logo-code-wh.svg) none;
       background-size: 227px 40px;
       padding-right: 15px;
-
 
       .feature{
         h3{
@@ -368,13 +370,13 @@
   li{
     padding-bottom: 20px;
     vertical-align: middle;
+    text-align: center;
 
     img{
       height: 85px;
       width: auto;
       margin: 0 auto;
       padding: 10px 0;
-      display: table;
 
       &.logo-az{
         padding-bottom: 20px;
